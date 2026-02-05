@@ -1,16 +1,7 @@
 # Vibe Engineering with Antigravity
 
-## Section 1
-https://github.com/dkdoc7/vibe-engineering
 
----
-
-## Section 2
-![Section Image](assets/slide_2_image_1.jpg)
-
----
-
-## Section 3: Vibe Coding
+## Vibe Coding
 Andrej Karpathy
 
 개발자가 대규모 언어 모델(LLM)에 프로젝트나 작업을 설명하면 LLM이 프롬프트에 따라 소스 코드를 생성하는 방식
@@ -21,17 +12,17 @@ Andrej Karpathy
 
 ---
 
-## Section 4: Vibe Coding
+## Vibe Coding Paradise
 ![Vibe Coding Concept](assets/slide_4_image_1.png)
 
 ---
 
-## Section 5: Vibe Coding
+## Vibe Coding Hell
 ![Vibe Coding Process](assets/slide_5_image_1.png)
 
 ---
 
-## Section 6: Vibe Coding 은 왜 실패 하는가?
+## Vibe Coding 은 왜 실패 하는가?
 ### 시간 손실
 처음에는 속도가 빠른 것처럼 보이지만 (빠른 PoC 확보), 개발이 구체화 될 수록 오류나 변경에 쉽게 영향을 받음
 
@@ -49,7 +40,7 @@ AI의 컨텍스트 윈도우가 커질수록 API 호출 비용이 함께 증가 
 
 ---
 
-## Section 7: Vibe Engineering
+## Vibe Engineering
 'Vibe Coding은 AI를 이용해 빠르고, 허술하고, 무책임하게 소프트웨어를 개발하는 방식’
 - Simon Willison -
 
@@ -71,7 +62,7 @@ https://simonwillison.net/2025/Oct/7/vibe-engineering/
 
 ---
 
-## Section 8: Google Antigravity
+## Google Antigravity
 ### AI 에이전트 중심 (Agent-First)
 AI Agent가 제안, 문서/코드 작성, 실행, 테스트(Chrome Agent 이용한 테스트 지원), 검증 작업을 스스로 수행
 Plan Mode 지원 : 복잡한 작업 수행 시, 작업 분석, 계획을 먼저 수립하고 사용자가 승인하면 작업을 진행
@@ -94,7 +85,7 @@ Browser 직접 제어를 통한 테스트
 
 ---
 
-## Section 9: Vibe Engineering with Antigravity
+## Vibe Engineering with Antigravity
 ### Requirements 분석
 요구사양, 제약사항을 지정. 상세히 기록 할 수록 정확한 결과를 얻는다. 입출력 스키마 등 샘플을 Few-Shot으로 제공하면 효과적 이다. Multi-Modal을 지원 하므로 Mockup 이미지를 활용하는 것도 효과적이다.
 
@@ -113,9 +104,6 @@ SW 에서 사용할 주요 개발 Framework, Library, DB 등을 지정 생소한
 아래 내용들은 Markdown 형식으로, Project Workspace의 Root의 /docs 에 생성 한다
 토큰 사용량 37.91%를 감소시킨 단 한줄의 프롬프트
 
----
-
-## Section 10: Vibe Engineering with Antigravity
 AI가 모든 문제를 완벽히 해결 해주지 않는다. 오히려 망쳐버릴 수도 있다. AI로도 해결하기 어렵고 복잡한 상황은 언제든지 발생 할 수 있다. AI는 LLM의 특성상, 항상 같은 코드를 생성하지 않을 수도 있으며, 인지 하지 못한 사이에 잘 동작 하던 코드를 망가뜨릴 수 있다.
 
 **모든게 끝이다 싶을때, Git 은 유일한 구원의 길이다! 수시로 Commit 하는 습관을 들이자!**
@@ -123,9 +111,6 @@ AI가 모든 문제를 완벽히 해결 해주지 않는다. 오히려 망쳐버
 
 다행히 Agent 는 Git 을 아주 잘 다룰 수 있다. Commit 만 잘 되어 있다면 수정 이력을 조회하고 문제의 해결 방안을 찾아낼 수 있다.
 
----
-
-## Section 11: Vibe Engineering with Antigravity
 ### Model의 사용량(Quota)
 제공되는 모델의 Quota 가 얼마인지 공식 적으로 공개 되지 않았으나 Daily Quota 와 Weekly Quota가 설정 되어 있다. Daily Quota 는 한계 도달 시 5간 정도, Weekly Quota 는 한계 도달 시 3~5일 정도의 Cool Time 후, 충전된다!!!
 
@@ -143,7 +128,7 @@ Google에서 5개 까지 개인 계정을 생성 할 수 있으며, Google One A
 
 ---
 
-## Section 12: Antigravity Configuration
+## Antigravity Configuration
 ### 1. 개발 모드 선택 (Development Modes)
 Agent 개입 수준을 선택
 
@@ -155,9 +140,6 @@ Agent 개입 수준을 선택
 ![Configuration 1](assets/slide_12_image_1.png)
 ![Configuration 2](assets/slide_12_image_2.jpg)
 
----
-
-## Section 13: Antigravity Configuration
 ### 2. 세부 실행 정책 (Execution Policies)
 선택한 모드에 따른 행동 규칙
 
@@ -169,9 +151,6 @@ Agent 개입 수준을 선택
 ![Execution Policy 1](assets/slide_13_image_1.jpg)
 ![Execution Policy 2](assets/slide_13_image_2.png)
 
----
-
-## Section 14: Antigravity Configuration
 ### 1. Keybindings (단축키 설정)
 - **Normal [선택됨/권장]**: 일반적인 최신 에디터(VS Code, 메모장 등)와 동일한 단축키 방식을 사용합니다.
 - **Vim**: 리눅스/유닉스 환경의 Vim 에디터에 익숙한 개발자를 위한 모드입니다.
@@ -190,7 +169,7 @@ Agent 개입 수준을 선택
 
 ---
 
-## Section 15: Antigravity : Agent Manager
+## Antigravity : Agent Manager
 ### 사이드바 구성
 - **Inbox**: 모든 Agent 작업 알림. 진행 상황 모니터링 및 완료된 작업 리뷰
 - **+ Start conversation**: 새로운 Agent 대화 시작
@@ -216,7 +195,7 @@ Agent 개입 수준을 선택
 
 ---
 
-## Section 16: Antigravity : Agent Settings
+## Agent Settings
 ### ARTIFACT 설정
 - **Review Policy**: Agent 가 생성한 아티팩트(계획, 코드 등)를 리뷰할지 결정
   - Always Proceed: 리뷰 없이 항상 진행 (빠른 작업용)
@@ -258,7 +237,6 @@ Agent 개입 수준을 선택
 3. Vibe Coding 실습 : Tic-Tac-Toe 게임 만들기
 4. Vibe Engineering 실습 : 숫자 야구게임 만들기
 
----
 
 ## Section 18: Antigravity 실습
 ### 3. Tic-Tac-Toe 게임 만들기
@@ -269,8 +247,6 @@ Agent 개입 수준을 선택
    - 구현 계획 리뷰  Fast Mode  Claude Sonnet 4.5  승인
 4. 생성 결과 확인
 5. Git Commit  Push  PR
-
----
 
 ## Section 19: Antigravity 실습
 ### 4. 숫자 야구게임 만들기
@@ -284,32 +260,10 @@ Agent 개입 수준을 선택
 5. 개발 시작 및 계획서 승인
    - Plan Mode + Claud Sonnet 4.5 (Thinking)
 
----
-
-## Section 20: Antigravity 실습
-### 4. 숫자 야구게임 만들기
-5. 계획서 승인 밑 작업 시작
+6. 계획서 승인 밑 작업 시작
    - Fast Mode + Claud Sonnet 4.5
-6. 작업 결과 확인
-7. Git Commit  Push  PR
-8. 추가 작업 : 게임 내용 저장 및 복기 기능 추가
+7. 작업 결과 확인
+8. Git Commit  Push  PR
+9. 추가 작업 : 게임 내용 저장 및 복기 기능 추가
    - 3~6) 반복: 요구사양 추가/업데이트  이력저장 DB 기술 스택 결정/업데이트  계획 수립  작업 진행
 
----
-
-## Section 21: Token 절약을 위한 Prompt
-**Output rules:**
-- Do NOT explain your reasoning
-- Do NOT summarize
-- Do NOT add comments outside code
-- Output ONLY the final result
-
-You may reason internally, but NEVER reveal chain-of thought. Only output the final answer. All reasoning must remain internal. Any explanatory text is forbidden.
-
-**Do NOT:**
-- reflect on your answer
-- explain decisions
-- restate requirements
-- provide examples unless requested
-
-심플하게!
