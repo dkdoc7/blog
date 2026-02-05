@@ -1,0 +1,4 @@
+extract_pptx.py
+venv/
+__pycache__/
+.DS_Store
