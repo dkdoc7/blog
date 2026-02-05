@@ -1,3 +1,3 @@
 # blog
 
-I'm Duke
+I'm Duke!
