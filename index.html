@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="dark-theme">
     <div id="app">
         <header id="main-header">
@@ -27,7 +29,7 @@
                     <h1 class="gradient-text">Vibe Engineering</h1>
                     <p class="subtitle">with Google Antigravity</p>
                     <div class="hero-cta">
-                        <a href="#slides" class="btn primary">Start Exploring</a>
+                        <a href="#vibe_engineering" class="btn primary">Start Reading</a>
                     </div>
                 </div>
                 <div class="hero-bg">
@@ -36,9 +38,9 @@
                 </div>
             </section>
 
-            <section id="slides" class="slides-container">
-                <!-- Slides will be injected here -->
-            </section>
+            <article id="content-area" class="blog-container">
+                <!-- Markdown content will be rendered here -->
+            </article>
         </main>
 
         <footer>
@@ -46,6 +48,8 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
