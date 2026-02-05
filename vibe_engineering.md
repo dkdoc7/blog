@@ -2,11 +2,11 @@
 
 
 ## Vibe Coding
-Andrej Karpathy
 
 개발자가 대규모 언어 모델(LLM)에 프로젝트나 작업을 설명하면 LLM이 프롬프트에 따라 소스 코드를 생성하는 방식
 
 "분위기에 완전히 몰입하고, 기하급수적 증가를 수용하고, 코드가 존재한다는 사실조차 잊어버리는 것"
+                                                            - Andrej Karpathy - 
 
 
 <img src="assets/slide_3_image_1.jpg" width="350"/>
