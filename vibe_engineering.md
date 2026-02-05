@@ -8,7 +8,7 @@ Andrej Karpathy
 
 "분위기에 완전히 몰입하고, 기하급수적 증가를 수용하고, 코드가 존재한다는 사실조차 잊어버리는 것"
 
-![Vibe Coding](assets/slide_3_image_1.jpg)
+
 <img src="hssets/slide_3_image_1.jpg" width="50" height="50"/>
 ---
 
