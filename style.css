@@ -50,6 +50,7 @@ body {
     font-weight: 800;
     background: var(--gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -87,6 +88,7 @@ nav a:hover {
     font-weight: 800;
     background: var(--gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
 }
@@ -152,35 +154,36 @@ nav a:hover {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.1; }
-    100% { transform: scale(1.2); opacity: 0.2; }
+    0% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0.2;
+    }
 }
 
-/* Slides Section */
+/* Blog Layout Section */
 .slides-container {
-    padding: 100px 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-    max-width: 1400px;
+    padding: 120px 20px;
+    max-width: 900px;
     margin: 0 auto;
-}
-
-.slide-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 24px;
-    padding: 40px;
-    transition: transform 0.4s, border-color 0.4s;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    backdrop-filter: blur(5px);
+    gap: 120px;
+    /* Large gaps between sections for a clean blog feel */
 }
 
-.slide-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-color);
+.blog-section {
+    position: relative;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.blog-section:last-child {
+    border-bottom: none;
 }
 
 .slide-index {
@@ -188,57 +191,96 @@ nav a:hover {
     font-weight: 600;
     color: var(--accent-color);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .slide-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .slide-content {
-    font-size: 1.1rem;
-    opacity: 0.85;
-    color: #ccc;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #ddd;
 }
 
 .slide-content p {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .slide-images {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin-top: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .slide-image {
     width: 100%;
-    border-radius: 12px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     border: 1px solid var(--border-color);
-    transition: transform 0.3s;
-    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .slide-image:hover {
     transform: scale(1.02);
 }
 
-footer {
-    padding: 60px 5%;
-    text-align: center;
-    border-top: 1px solid var(--border-color);
-    opacity: 0.5;
-    font-size: 0.9rem;
+/* Sidebar / Table of Contents (Optional) */
+#toc {
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+.toc-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--border-color);
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.toc-dot.active {
+    background: var(--accent-color);
+    transform: scale(1.5);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+@media (max-width: 1200px) {
+    #toc {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .gradient-text {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
+
+    .slide-title {
+        font-size: 2rem;
+    }
+
     .slides-container {
-        grid-template-columns: 1fr;
+        padding: 80px 20px;
+        gap: 80px;
     }
 }
