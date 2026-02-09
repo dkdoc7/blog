@@ -10,7 +10,7 @@
 <div style="text-align: right"> - Andrej Karpathy - </div>
 </div>
 
-<img src="assets/slide_3_image_1.jpg" width="350"/>
+<img src="assets/slide_3_image_1.jpg" width="350" style="text-align:center" />
 ---
 
 ## Vibe Coding Paradise
